@@ -1,7 +1,7 @@
 require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
-const cron = require('node-cron');
+// const cron = require('node-cron');
 
 // 配置（替换为你的值）
 const BOT_TOKEN = process.env.BOT_TOKEN; // 从 @BotFather 获取
@@ -111,7 +111,7 @@ async function sendDingTalkMessage(message, alert = '') {
 
 
 // 定时任务：每 5 分钟执行一次
-cron.schedule('*/5 * * * *', checkAndNotify);
+// cron.schedule('*/5 * * * *', checkAndNotify);
 
 // 首次运行
 checkAndNotify();
