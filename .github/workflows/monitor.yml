@@ -2,7 +2,7 @@ name: DUSD Monitor
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # 每 5 分钟运行（UTC 时区）
+    - cron: '2-57/5 * * * *'  # 每 5 分钟运行（UTC 时区）
   workflow_dispatch:  # 支持手动触发
 
 jobs:
